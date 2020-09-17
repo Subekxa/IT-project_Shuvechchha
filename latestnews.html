@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>News-Fan Page</title>
+<link rel="stylesheet" type="text/css" href="css.info/style.css">
+<script>
+    var i = 0; //start point
+    var images = [];
+    var time = 2500;
+
+
+    // Image List
+    images[0] = 'images/slider.jpg';
+    images[1] = 'images/slider1.jpg';
+    images[2] = 'images/slider2.jpg';
+    images[3] = 'images/slider3.jpg';
+    images[4] = 'images/slider4.jpeg';
+    images[5] = 'images/slider5.jpg';
+    //change Image
+    function changeImg(){
+      document.slide.src = images[i];
+
+      if(i < images.length - 1){
+        i++;
+      } else {
+        i = 0;
+      }
+      setTimeout("changeImg()", time);
+    }
+
+    window.onload = changeImg;
+
+
+   </script>
+  </head>
+  
+  <body>
+      
+     <div class="container">
+  <div class="main">
+    <nav>
+      <div class="logo">
+        <img src="images/homelogo.png">
+        <br>
+        <br>
+        <h1>KDRAMA SITE</h1>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="#">LATEST NEWS</a></li>
+        <li><a href="signin.html">SIGN IN</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<br>
+<br>
+
+<div class="bk">
+   <br> 
+   <br>
+  <h3>ON AIR K-DRAMAS</h3>
+  <br>
+  <div class="sl">
+
+  
+<img name="slide" width="800" height="600">
+  <div class="text">
+
+  <p>Trending kdrama</p>
+  <br>
+  
+  <p>Are you addicted towards kdrama? Want to know some more dramas?<a href="moreinfo.html" target="_blank">{more}</a></p>
+
+  </div>
+  </div>
+
+    <div class = "footer">
+    <br>
+    <j>DRAMA COOL<br>
+    Privacy Policy | Terms of Use</j><br> 
+      <t>Copyright &copy; 2020 dramacool</t><br/>
+      
+      <p align="left" style="top:0px; position: relative; left:5px;"> Facebook </p> 
+      <p align="left" style="top:-25px; position: relative; left:90px;">
+      <a href="https://www.facebook.com/" target="_blank"> <img src="images/fblogo.png" width="30px"> </a> </p>
+      
+      <p align="left" style="top:0px; position: relative; left:5px;"> Instagram </p> 
+      <p align="left" style="top:-25px; position: relative; left:90px;">
+      <a href="https://www.instagram.com/" target="_blank"> <img src="images/instalogo.png" width="30px"> </a> </p>
+
+      <p align="left" style="top:0px; position: relative; left:5px;"> Twitter </p> 
+      <p align="left" style="top:-25px; position: relative; left:90px;">
+      <a href="https://twitter.com/" target="_blank"> <img src="images/twitterlogo.png" width="30px"> </a> </p>
+      
+
+        <a href="index.html">|HOME|</a>
+        <a href="#">|ABOUT US|</a>
+        <a href="gallery.html">|GALLERY|</a>
+        <a href="latestnews.html">|LATEST NEWS|</a>
+        <a href="signin.html">|SIGN IN|</a>
+  </div>
+      </div>
+    <script src="app.js"></script>
+</body>
+</html>
